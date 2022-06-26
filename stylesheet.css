@@ -1,0 +1,168 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+body {
+background-color: #181717;
+font-family: sans-serif;
+}
+
+.content {
+grid-area: content;
+}
+.LOVE{
+grid-area: LOVE;
+background: linear-gradient(to right, rgb(29, 28, 28), rgbrgb(60, 31, 68)
+rgb(97, 108, 202)) ;
+justify-content: center;
+}
+.footer {
+grid-area: footer;
+background: white;
+}
+.container {
+font-size: 1.5em;
+width: 100%;
+height: 100;
+height: 100vh;
+display: grid;
+grid-template-areas: "LOVE" "content" "footer";
+grid-template-columns: 1fr;
+grid-template-rows: 130px 800px 250px;
+background-image: url(images/background quiet night.jpg);
+
+}
+
+.content, .LOVE, .footer{
+padding: 1em;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+
+nav li{
+list-style: none;
+padding: 1em 0;
+}
+
+nav li a {
+color: white;
+font-weight: 700;
+opacity: 0.6;
+text-decoration: none;
+transition: 0.3s;
+}
+
+nav li a:hover {
+opacity: 1;
+}
+.Drak {
+max-width: 90 px;
+margin: 0 auto;
+text-align: center;
+}
+
+.Drak img {
+width: 200px;
+}
+
+.Drak h1 {
+font-size: 2em;
+font-weight: 300;
+color: #35225e;
+}
+
+.Drak p {
+font-weight: 300;
+line-height: 1.3em;
+color: #98aBad;
+}
+
+.action-btn {
+display: inline-block;
+text-decoration: none;
+color: white;
+font-weight: 700;
+background: #94abfc;
+padding: 0.5em 2em;
+border-radius: 60px;
+margin: 1em 0;
+transition: 0.3s;
+}
+
+footer ul {
+max-width: 640px;
+margin: 2em auto;
+padding: 0;
+text-align: center;
+display: flex;
+flex-direction: row;
+
+}
+
+footer ul li {
+list-style: none;
+align-self: flex-end;
+}
+
+footer ul li a{
+text-decoration: none;
+color: #242830;
+}
+
+footer ul li img {
+width: 30%;
+}
+
+footer p {
+font-size: 0.8em;
+}
+
+@media (min-width: 1040px){
+.container {
+  grid-template-areas:"LOVE content" "LOVE footer" ;
+  grid-template-rows: 1fr auto ;
+  grid-template-columns: 300px 1f;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.LOVE{
+  background: linear-gradient( rgb(15, 15, 15), rgb(63, 43, 68),
+  rgba(110,125,253,1)) ;
+  padding-top: 10em;
+}
+.Drak{
+  text-align: left;
+  margin: 7em 0;
+}
+.Drak img {
+  width: 200px;
+  float: right;
+}
+.Drak h1{
+  font-size: 3em;
+}
+.Drak p{
+  width: 60%;
+}
+footer ul {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+footer ul li a img {
+  width: 20%;
+}
+}
